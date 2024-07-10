@@ -270,6 +270,7 @@ body{
                             .travel{
                                 display: flex;
                                 width: 106px;
+                                line-height: 28px;
                             }
                         }
                     }
