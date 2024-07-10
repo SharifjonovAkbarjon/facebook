@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar">
+            <nav class="navbar main">
                 <div class="title">
                     <h2>facebook</h2>
                     <p>Facebook hayotingizdagi odamlar bilan bog‘lanishga va o‘zaro o‘rtoqlashishga yordam beradi.
@@ -33,7 +33,7 @@
                             </div>
                             <hr style="margin: 10px; opacity: 50%;">
                             <div class="elektron">
-                                <button class="btns">Yangi hisob qaydnomasini yaratish</button>
+                                <button onclick="ShowNexpage()" class="btns">Yangi hisob qaydnomasini yaratish</button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,9 @@
             <div class="sign__up">
                 <div class="head">
                     <span>Sign Up</span>
-                    <i class="fa-solid fa-xmark"></i>
+                    <button>
+                        <i onclick="hideNextpage()" class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
                 <div class="text">
                     <p>It's quick and easy</p>
@@ -76,7 +78,66 @@
                         </div>
                     </div>
                 </div>
-                <div class="dates"></div>
+                <div class="dates">
+                    <div class="date">
+                        <div class="date__text">
+                            <p>Birthday</p>
+                        </div>
+                        <div class="birthday">
+                            <div class="male">
+                                <!-- <p>Jul</p> -->
+                                <select class="travel" name="language" id="language">
+                                    <option value="travel">March</option>
+                                    <option value="travel">April</option>
+                                    <option value="travel">May</option>
+                                    <option value="travel">June</option>
+                                    <option value="travel">July</option>
+                                    <option value="travel">August</option>
+                                    <option value="travel">September</option>
+                                    <option value="travel">October</option>
+                                    <option value="travel">Nowember</option>
+                                    <option value="travel">December</option>
+                                    <option value="travel">January</option>
+                                    <option value="travel">February</option>
+                                </select>
+                                </div>
+                            <div class="male">
+                                <p>8</p>
+                            </div>
+                            <div class="male">
+                                <p>2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="date__text">
+                            <p>Gender</p>
+                        </div>
+                        <div class="birthday">
+                            <div class="male">
+                                <p>Female</p>
+                                <input type="checkbox">
+                            </div>
+                            <div class="male">
+                                <p>Male</p>
+                                <input type="checkbox">
+                            </div>
+                            <div class="male">
+                                <p>Custom</p>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <p>People who use our service many have uploaded your contact information to Facebook. <span>Learn more.</span></p>
+                    </div>
+                    <div class="paragraph">
+                        <p>By clicking Sign Up, you agree to our <span>Terms, Privacy, Policy</span> and <span>Cookies Policy.</span> You may recieve SMS Notifications from us and can opt out any times</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn">Sign Up</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
